@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Desktop Escape</title>
+<link rel="stylesheet" href="style.css">
+<main id="game">
+  <canvas id="desktop" width="960" height="540" aria-label="Desktop Escape playfield"></canvas>
+  <section id="menu" aria-label="Game menu"></section>
+  <div id="touch" hidden><button data-key="ArrowLeft" aria-label="Move left">←</button><button data-key="ArrowRight" aria-label="Move right">→</button><button data-key="Space">Jump</button><button id="pause">Pause</button></div>
+</main>
+<p>A / D or arrows to move · Space to jump · Drag windows · Esc to pause · R to retry</p>
+<audio id="music" src="Midnight-Checksum.wav" preload="metadata" loop></audio>
+<script src="levels.js"></script>
+<script src="game.js"></script>
+</html>
